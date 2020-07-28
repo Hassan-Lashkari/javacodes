@@ -1,0 +1,49 @@
+package Programs;
+import java.util.Scanner;
+public class Ten {
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int min1,min2,min3;
+        int sec1,sec2,sec3;
+        int mili1,mili2,mili3;
+        int one,two,three;
+        String s1,s2,s3;
+        System.out.println("Enter min sec mili 1");
+        min1=sc.nextInt();
+        sec1=sc.nextInt();
+        mili1=sc.nextInt();
+        System.out.println("Enter min sec mili 2");
+        min2=sc.nextInt();
+        sec2=sc.nextInt();
+        mili2=sc.nextInt();
+        System.out.println("Enter min sec mili 3");
+        min3=sc.nextInt();
+        sec3=sc.nextInt();
+        mili3=sc.nextInt();
+        s1=min1+":"+sec1+":"+mili1;
+        s2=min2+":"+sec2+":"+mili2;
+        s3=min3+":"+sec3+":"+mili3;
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+        one=min1*60000+sec1*1000+mili1;
+        two=min2*60000+sec2*1000+mili2;
+        three=min3*60000+sec3*1000+mili3;
+
+        if(one < two && one < three)
+        {
+            System.out.println("Smallest lap is:"+s1);
+        }
+        else if(two < three)
+        {
+            System.out.println("Smallest lap is:"+s2);
+        }
+        else
+        {
+            System.out.println("Smallest lap is:"+s3);
+        }
+
+
+    }
+}
