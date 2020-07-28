@@ -1,0 +1,16 @@
+package Programs;
+import java.util.Scanner;
+public class Eleven
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int c;
+        System.out.println("Enter the 2 numbers");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        c=a+~b+1;
+        System.out.println(a+"-"+b+":"+c);
+    }
+}
+
