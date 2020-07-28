@@ -1,0 +1,18 @@
+package Programs;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+public class TwoA
+{
+    public static void main(String [] args) throws IOException
+    {
+          String s;
+          BufferedReader input=new BufferedReader(new InputStreamReader(System.in));
+          System.out.println("Enter the string");
+          s=input.readLine();
+          System.out.println("Enter the int");
+          int n=Integer.parseInt(input.readLine());
+          System.out.println("string:"+s+"  int:"+n);
+    }
+
+}
