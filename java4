@@ -1,0 +1,29 @@
+package Programs;
+import java.util.Scanner;
+public class Four
+{
+    public static void main(String [] args)
+    {
+        int v=0;
+        int c=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter ");
+        String s=sc.nextLine();
+        s=s.toLowerCase();
+        System.out.println("The string:"+s);
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)=='a'||s.charAt(i)=='e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u')
+            {
+                v++;
+            }
+            else
+            {
+                c++;
+            }
+        }
+        System.out.println("vowels:"+v);
+        System.out.println("consonant:"+c);
+
+    }
+}
