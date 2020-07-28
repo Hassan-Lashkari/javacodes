@@ -1,0 +1,75 @@
+package Programs;
+import java.util.Scanner;
+
+public class Six
+{
+    public static void main(String [] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a,b;
+        double d,radians;
+        System.out.println("Select the Function");
+        int v=sc.nextInt();
+        int  result=0;
+        int sum=1;
+        switch(v) {
+            case 1:
+                System.out.println("Enter the 2 numbers");
+                a = sc.nextInt();
+                b = sc.nextInt();
+                result = a + b;
+                System.out.println("Result is " + result);
+                break;
+            case 2:
+                System.out.println("Enter the 2 numbers");
+                a = sc.nextInt();
+                b = sc.nextInt();
+                result = a - b;
+                System.out.println("Result is " + result);
+                break;
+            case 3:
+                System.out.println("Enter the 2 numbers");
+                a = sc.nextInt();
+                b = sc.nextInt();
+                result = a * b;
+                System.out.println("Result is " + result);
+                break;
+            case 4:
+                System.out.println("Enter the angle in degres");
+                d = sc.nextInt();
+                radians = Math.toRadians(d);
+                double sinValue = Math.sin(radians);
+                System.out.println("sin(" + d + ") = " + sinValue);
+                break;
+            case 5:
+                System.out.println("Enter the angle in degres");
+                d = sc.nextInt();
+                radians = Math.toRadians(d);
+                double cosValue = Math.cos(radians);
+                System.out.println("cos(" + d + ") = " + cosValue);
+                break;
+            case 6:
+                System.out.println("Enter the angle in degres");
+                d = sc.nextInt();
+                radians = Math.toRadians(d);
+                double tanValue = Math.tan(radians);
+                System.out.println("tan(" + d + ") = " + tanValue);
+                break;
+            case 7:
+                System.out.println("Enter the input1^input2");
+                a = sc.nextInt();
+                b = sc.nextInt();
+                for (int j = 0; j < b; j++)
+                {
+                    sum *= a;
+                }
+                System.out.println("input1^input2= " + sum);
+
+
+            default :System.out.println("function invalid");
+
+
+
+        }
+    }
+}
